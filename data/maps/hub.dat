@@ -332,6 +332,26 @@ tile{
   pattern = "17",
 }
 
+sensor{
+  name = "blu_sensor",
+  layer = 0,
+  x = 24,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "16",
+}
+
+sensor{
+  name = "red_sensor",
+  layer = 0,
+  x = 216,
+  y = 32,
+  width = 80,
+  height = 16,
+  pattern = "17",
+}
+
 destination{
   name = "destination",
   layer = 0,
