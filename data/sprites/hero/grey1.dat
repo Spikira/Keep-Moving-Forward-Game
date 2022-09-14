@@ -13,6 +13,17 @@ animation{
   src_image = "hero/tank_r.png",
   frame_delay = 100,
   frame_to_loop_on = 0,
+  name = "sword",
+  src_image = "hero/tank_r.png",
+  frame_delay = 250,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+  },
+}
   directions = {
     { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
     { x = 0, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21, num_frames = 2 },
