@@ -14,21 +14,12 @@ function rupees_builder:new(game, config)
     horizontal_alignment = "left",
   }
   rupees.digits_text:set_text("Score:"..game:get_money())
-  rupees.rupee_icons_img = sol.surface.create("hud/rupee_icon.png")
-  rupees.rupee_bag_displayed = game:get_item("money_bag"):get_variant()
   rupees.money_displayed = game:get_money()
 
   function rupees:check()
 
     local need_rebuild = false
-    local rupee_bag = game:get_item("money_bag"):get_variant()
     local money = game:get_money()
-
-    -- Max money.
-    if rupee_bag ~= rupees.rupee_bag_displayed then
-      need_rebuild = true
-      rupees.rupee_bag_displayed = rupee_bag
-    end
 
     -- Current money.
     if money ~= rupees.money_displayed then
@@ -66,15 +57,12 @@ function rupees_builder:new(game, config)
 
     rupees.surface:clear()
 
-    -- Max money (icon).
-    rupees.rupee_icons_img:draw_region((rupees.rupee_bag_displayed - 1) * 12, 0, 12, 12, rupees.surface)
-
     -- Current rupee (counter).
     local max_money = game:get_max_money()
     if rupees.money_displayed == max_money then
       rupees.digits_text:set_font("8_bit")
     else
-      rupees.digits_text:set_font("8_bit")  -- TODO show in a different color
+      rupees.digits_text:set_font("8_bit")
     end
     rupees.digits_text:set_text("Score:"..rupees.money_displayed)
     rupees.digits_text:draw(rupees.surface, 16, 5)
