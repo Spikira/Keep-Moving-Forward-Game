@@ -13,10 +13,10 @@ animation{
   src_image = "hero/tank_r.png",
   frame_delay = 250,
   directions = {
-    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
-    { x = 48, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
+    { x = 72, y = 48, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
   },
 }
 animation{
