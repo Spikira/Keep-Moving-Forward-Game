@@ -21,7 +21,8 @@ sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
-sprite{ id = "hero/tunic1", description = "Red Tank" }
+sprite{ id = "hero/blu1", description = "Blu Tank" }
+sprite{ id = "hero/red1", description = "Red Tank" }
 sprite{ id = "hud/dialog_box_message_end", description = "Dialog end" }
 sprite{ id = "hud/empty_heart", description = "Empty heart" }
 sprite{ id = "hud/heart", description = "Heart" }
