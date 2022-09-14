@@ -7,5 +7,6 @@
 
 require("scripts/hud/hud")
 require("scripts/menus/dialog_box")
+require("scripts/initial_tank")
 
 return true
