@@ -192,6 +192,7 @@ item{ id = "money_bag", description = "Money bag (small / large / huge)" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
+enemy{ id = "green_robot", description = "Green Robot" }
 enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
 entity{ id = "disk", description = "Disk" }

@@ -23,13 +23,16 @@ function enemy:on_restarted()
   if enemy:get_distance(hero) <= 88 then
     local dir =  enemy:get_direction4_to(hero)
     m = sol.movement.create("straight")
-    m:set_speed(96)
-    m:set_angle(dir * math.pi / 2)
-    m:start(enemy)
-    function m:on_obstacle_reached()
-      sol.timer.start(enemy, 500, function()
-        enemy:restart()
-      end)
+    m:set_speed(88)
+    m:set_smooth(false)
+    if dir == 1 or dir == 3 then
+      m:set_angle(dir * math.pi / 2)
+      m:start(enemy)
+      function m:on_obstacle_reached()
+        sol.timer.start(enemy, 500, function()
+          enemy:restart()
+        end)
+      end
     end
   end
 end
