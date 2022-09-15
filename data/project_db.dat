@@ -1,4 +1,5 @@
 map{ id = "hub", description = "Hub" }
+map{ id = "metal_base/level_1", description = "Level 1" }
 
 tileset{ id = "metal-base", description = "Metal Base" }
 
@@ -8,8 +9,10 @@ sprite{ id = "doors/door_normal", description = "Door (normal)" }
 sprite{ id = "doors/door_small_key", description = "Door (small key)" }
 sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "enemies/cyan_golem", description = "Cyan Golem" }
 sprite{ id = "enemies/green_robot", description = "Green Robot" }
-sprite{ id = "enemies/yellow-soldier", description = "Yellow Soldier" }
+sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
+sprite{ id = "enemies/yellow_soldier", description = "Yellow Soldier" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block (grey)" }
 sprite{ id = "entities/bomb", description = "Bomb" }
@@ -22,6 +25,7 @@ sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "hero/blu1", description = "Blu Tank" }
+sprite{ id = "hero/disk", description = "Disk" }
 sprite{ id = "hero/grey1", description = "Grey Tank" }
 sprite{ id = "hero/red1", description = "Red Tank" }
 sprite{ id = "hero/sword1", description = "Gun FX" }
@@ -139,6 +143,7 @@ sound{ id = "shield", description = "shield" }
 sound{ id = "shield2", description = "shield2" }
 sound{ id = "shield3", description = "shield3" }
 sound{ id = "soft_tap", description = "soft_tap" }
+sound{ id = "spikira", description = "Spikira" }
 sound{ id = "splash", description = "splash" }
 sound{ id = "stairs_down_end", description = "stairs_down_end" }
 sound{ id = "stairs_down_start", description = "stairs_down_start" }
@@ -186,24 +191,9 @@ item{ id = "money_bag", description = "Money bag (small / large / huge)" }
 item{ id = "sword", description = "Sword" }
 item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
-enemy{ id = "chameleon", description = "Chameleon" }
-enemy{ id = "explosion", description = "Explosion" }
-enemy{ id = "flame", description = "Flame" }
-enemy{ id = "generic_projectile", description = "Projectile" }
-enemy{ id = "goblin_green", description = "Goblin" }
-enemy{ id = "iceball", description = "Iceball" }
-enemy{ id = "pterobat", description = "Pterobat" }
-enemy{ id = "shamablin_fire", description = "Goblin Shaman Fire" }
-enemy{ id = "skelfos", description = "Skelfos" }
-enemy{ id = "skullbat", description = "Skullbat" }
-enemy{ id = "slime_cyan", description = "Slime (cyan)" }
-enemy{ id = "slime_egg", description = "Slime egg" }
-enemy{ id = "slime_green", description = "Slime (green)" }
-enemy{ id = "slime_purple", description = "Slime (purple)" }
-enemy{ id = "slime_red", description = "Slime (red)" }
-enemy{ id = "slime_yellow", description = "Slime (yellow)" }
-enemy{ id = "slimy_green", description = "Slimy Green" }
+enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
+entity{ id = "disk", description = "Disk" }
 
 language{ id = "en", description = "English" }
 
@@ -213,23 +203,6 @@ font{ id = "enter_command", description = "Enter Command" }
 shader{ id = "grayscale", description = "grayscale" }
 shader{ id = "hq2x", description = "hq2x" }
 
-file{ path = "enemies/chameleon.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/explosion.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/flame.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/generic_projectile.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/goblin_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/iceball.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/pterobat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/shamablin_fire.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skelfos.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/skullbat.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_cyan.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_egg.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_green.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_purple.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_red.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slime_yellow.lua", author = "Diarandor", license = "GPL v3" }
-file{ path = "enemies/slimy_green.lua", author = "Diarandor", license = "GPL v3" }
 file{ path = "fonts/8_bit.png", author = "Spikira", }
 file{ path = "fonts/enter_command.ttf", author = "Jeti", license = "CC BY 4.0" }
 file{ path = "items/gem.lua", author = "Christopho", license = "GPL v3" }
@@ -256,7 +229,6 @@ file{ path = "scripts/language_manager.lua", author = "Christopho", license = "G
 file{ path = "scripts/menus", license = "GPL v3" }
 file{ path = "scripts/menus/dialog_box.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/menus/initial_menus_config.lua", author = "Christopho", license = "GPL v3" }
-file{ path = "scripts/menus/solarus_logo.lua", author = "Maxs", license = "GPL v3" }
 file{ path = "scripts/menus/start_game.lua", author = "Christopho", license = "GPL v3" }
 file{ path = "scripts/multi_events.lua", author = "Christopho, std::gregwar", license = "GPL v3" }
 file{ path = "scripts/text_fx_helper.lua", author = "Olivier Cléro", license = "GPL v3" }

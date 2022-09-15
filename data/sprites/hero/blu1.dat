@@ -1,7 +1,6 @@
 animation{
   name = "stopped",
   src_image = "hero/tank_r.png",
-  frame_delay = 100,
   directions = {
     { x = 48, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 48, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
@@ -12,7 +11,7 @@ animation{
 animation{
   name = "sword",
   src_image = "hero/tank_r.png",
-  frame_delay = 250,
+  frame_delay = 100,
   directions = {
     { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },
     { x = 72, y = 24, frame_width = 24, frame_height = 24, origin_x = 12, origin_y = 21 },

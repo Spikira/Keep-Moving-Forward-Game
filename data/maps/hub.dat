@@ -19,6 +19,15 @@ tile{
 
 tile{
   layer = 0,
+  x = 272,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
   x = 216,
   y = 32,
   width = 80,
@@ -74,9 +83,9 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 0,
+  y = 16,
   width = 16,
-  height = 240,
+  height = 224,
   pattern = "1",
 }
 
@@ -93,7 +102,7 @@ tile{
   layer = 0,
   x = 216,
   y = 16,
-  width = 80,
+  width = 32,
   height = 16,
   pattern = "3",
 }
@@ -136,9 +145,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 16,
+  x = 80,
   y = 0,
-  width = 304,
+  width = 160,
   height = 16,
   pattern = "1",
 }
@@ -183,7 +192,7 @@ tile{
   layer = 0,
   x = 24,
   y = 16,
-  width = 80,
+  width = 32,
   height = 16,
   pattern = "3",
 }
@@ -316,7 +325,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 144,
+  x = 128,
   y = 96,
   width = 16,
   height = 16,
@@ -325,11 +334,110 @@ tile{
 
 tile{
   layer = 0,
-  x = 160,
+  x = 176,
   y = 96,
   width = 16,
   height = 16,
   pattern = "17",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 16,
+  width = 32,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 48,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 16,
+  width = 8,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 240,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 264,
+  y = 0,
+  width = 8,
+  height = 16,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 0,
+  width = 48,
+  height = 16,
+  pattern = "1",
 }
 
 destination{
@@ -356,5 +464,27 @@ sensor{
   y = 45,
   width = 80,
   height = 16,
+}
+
+teletransporter{
+  layer = 0,
+  x = 248,
+  y = 0,
+  width = 16,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "metal_base/level_1",
+  destination = "red",
+}
+
+teletransporter{
+  layer = 0,
+  x = 56,
+  y = 0,
+  width = 16,
+  height = 16,
+  transition = "scrolling",
+  destination_map = "metal_base/level_1",
+  destination = "blu",
 }
 
