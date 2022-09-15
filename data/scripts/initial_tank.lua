@@ -1,4 +1,4 @@
--- Removes diagonal and backwards movement, also sword loading.
+-- Removes diagonal and backwards movement, also sword loading and camera shake.
 local game = sol.main.get_metatable("game")
 
 function game:on_command_pressed(command)
@@ -43,6 +43,21 @@ local x, y, layer = self:get_position()
       model = "disk"
     })
   end
+end
+
+function hero:on_taking_damage(damage)
+  game:remove_life(damage)
+  local camera = self:get_map():get_cramera()
+  camera:set_position_on_screen(-1, 0)
+  sol.timer.start(self, 10, function()
+    camera:set_position_on_screen(0, 0)
+    sol.timer.start(self, 10, function()
+      camera:set_position_on_screen(1, 0)
+      sol.timer.start(self, 10, function()
+        camera:set_position_on_screen(0, 0)
+      end)
+    end)
+  end)
 end
 
 return true
