@@ -11,7 +11,8 @@ function game:on_command_pressed(command)
     end
   end
   if command == "down" then
-    self:simulate_command_released("down")    
+    self:simulate_command_released("down")
+    sol.audio.play_sound("wrong3") 
   end
   if command == "left" then
     if self:is_command_pressed("up") then

@@ -12,10 +12,12 @@ end
 -- that is, when the player takes control of the hero.
 function map:on_opening_transition_finished()
   function red_sensor:on_activated()
+    sol.audio.play_sound("quake")
     hero:set_tunic_sprite_id("hero/red1")
   end
 
   function blu_sensor:on_activated()
+    sol.audio.play_sound("quake")
     hero:set_tunic_sprite_id("hero/blu1")
   end
 end
