@@ -10,7 +10,7 @@ function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   enemy:set_life(1)
   enemy:set_damage(1)
-  enemy:set_invincible()
+  enemy:set_property("invincible", true)
 end
 
 -- Event called when the enemy should start or restart its movements.
@@ -32,6 +32,7 @@ end
 
 function enemy:on_attacking_hero()
   hero:start_hurt(enemy:get_damage())
+  m:stop()
   enemy:get_sprite():set_animation("explode")
   sol.timer.start(enemy, 250, function()
     enemy:remove()
