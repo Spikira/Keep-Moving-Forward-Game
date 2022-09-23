@@ -25,12 +25,8 @@ function disk:on_created()
   end
   disk:add_collision_test("sprite", function(entity_a, entity_b)
     if entity_b:get_type() == "enemy" then
-      if entity_b:get_property("invincible") == true then
-        sprite:set_animation("explode")
-        m:stop()
-        sol.timer.start(disk, 100, function()
-          disk:remove()
-        end)
+      if entity_b:get_property("invincible") == "true" then
+        -- Will eventually do something here, not sure what for now.
       else
         if sound == nil then
           sol.audio.play_sound("fire_ball")
