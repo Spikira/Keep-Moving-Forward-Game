@@ -2780,6 +2780,15 @@ tile{
   pattern = "11",
 }
 
+tile{
+  layer = 0,
+  x = 64,
+  y = 960,
+  width = 32,
+  height = 16,
+  pattern = "8",
+}
+
 destination{
   name = "red",
   layer = 0,
@@ -3223,15 +3232,15 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 440,
-  y = 1021,
+  x = 360,
+  y = 1093,
   direction = 0,
   breed = "green_robot",
 }
 
 enemy{
   layer = 0,
-  x = 440,
+  x = 320,
   y = 1005,
   direction = 0,
   breed = "green_robot",
@@ -3241,6 +3250,38 @@ enemy{
   layer = 0,
   x = 568,
   y = 869,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 280,
+  y = 1093,
+  direction = 0,
+  breed = "green_robot",
+}
+
+enemy{
+  layer = 0,
+  x = 400,
+  y = 1181,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 432,
+  y = 1021,
+  direction = 0,
+  breed = "green_robot",
+}
+
+enemy{
+  layer = 0,
+  x = 112,
+  y = 949,
   direction = 0,
   breed = "yellow_soldier",
 }
