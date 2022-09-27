@@ -6,6 +6,7 @@ properties{
   min_layer = 0,
   max_layer = 2,
   tileset = "metal-base",
+  music = "blood_n_storm",
 }
 
 tile{
@@ -362,9 +363,9 @@ tile{
 tile{
   layer = 0,
   x = 0,
-  y = 752,
+  y = 640,
   width = 16,
-  height = 1664,
+  height = 1776,
   pattern = "1",
 }
 
@@ -2720,9 +2721,9 @@ tile{
 tile{
   layer = 0,
   x = 592,
-  y = 752,
+  y = 608,
   width = 48,
-  height = 128,
+  height = 272,
   pattern = "1",
 }
 
@@ -2755,9 +2756,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 56,
+  x = 64,
   y = 752,
-  width = 528,
+  width = 208,
   height = 16,
   pattern = "3",
 }
@@ -2787,6 +2788,276 @@ tile{
   width = 32,
   height = 16,
   pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 752,
+  width = 80,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 752,
+  width = 80,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 640,
+  width = 256,
+  height = 112,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 656,
+  width = 8,
+  height = 96,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 272,
+  y = 640,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 656,
+  width = 8,
+  height = 96,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 672,
+  width = 80,
+  height = 80,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 688,
+  width = 8,
+  height = 64,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 640,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 320,
+  y = 640,
+  width = 48,
+  height = 32,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 640,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 672,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 656,
+  width = 8,
+  height = 16,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 672,
+  width = 8,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 656,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 624,
+  width = 8,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 608,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 576,
+  y = 656,
+  width = 16,
+  height = 48,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 704,
+  width = 80,
+  height = 48,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 752,
+  width = 8,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 720,
+  width = 8,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 504,
+  y = 704,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 608,
+  y = 448,
+  width = 32,
+  height = 160,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 600,
+  y = 448,
+  width = 8,
+  height = 160,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 528,
+  width = 192,
+  height = 112,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 544,
+  width = 8,
+  height = 96,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 192,
+  y = 528,
+  width = 8,
+  height = 16,
+  pattern = "11",
 }
 
 destination{
@@ -3284,6 +3555,46 @@ enemy{
   y = 949,
   direction = 0,
   breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 200,
+  y = 781,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 360,
+  y = 781,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 240,
+  y = 909,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 877,
+  direction = 0,
+  breed = "green_robot",
+}
+
+enemy{
+  layer = 0,
+  x = 456,
+  y = 741,
+  direction = 0,
+  breed = "green_robot",
 }
 
 separator{

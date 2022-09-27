@@ -43,7 +43,9 @@ sprite{ id = "hud/magic_bar", description = "Magic bar" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
+sprite{ id = "menus/spikira/spikira_logo", description = "Spikira Logo" }
 sprite{ id = "menus/team_logo", description = "Solarus Team logo" }
+sprite{ id = "menus/title_screen/title_screen", description = "Title Screen" }
 sprite{ id = "npc/kaleido", description = "Kaleido" }
 sprite{ id = "npc/sign", description = "Sign" }
 sprite{ id = "npc/woman_1a", description = "Woman 1a" }
@@ -68,6 +70,7 @@ sprite{ id = "teletransporters/teletransporter_green", description = "Teletransp
 sprite{ id = "teletransporters/teletransporter_pink", description = "Teletransporter (pink)" }
 sprite{ id = "teletransporters/teletransporter_yellow", description = "Teletransporter (yellow)" }
 
+music{ id = "blood_n_storm", description = "Blood N' Storm!" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bird_chirp", description = "bird_chirp" }
