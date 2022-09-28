@@ -199,6 +199,7 @@ item{ id = "tunic", description = "Tunic (red / green / purple)" }
 enemy{ id = "cyan_golem", description = "Cyan Golem" }
 enemy{ id = "green_robot", description = "Green Robot" }
 enemy{ id = "projectile", description = "Projectile" }
+enemy{ id = "purple_sludge", description = "Purple Sludge" }
 enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
 entity{ id = "disk", description = "Disk" }
