@@ -23,5 +23,5 @@ function enemy:on_restarted()
 end
 
 function enemy:on_dying()
-  game:add_money(50)
+  game:add_money(150)
 end
