@@ -9,7 +9,7 @@ local dir =  0
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(5)
+  enemy:set_life(3)
   enemy:set_damage(2)
 end
 

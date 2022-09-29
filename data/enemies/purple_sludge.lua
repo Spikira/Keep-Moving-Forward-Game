@@ -11,7 +11,7 @@ function enemy:on_created()
   enemy:set_life(5)
   enemy:set_damage(1)
   m = sol.movement.create("circle")
-  m:set_speed(42)
+  -- m:set_speed(42)
   m:set_radius(16)
   m:start(enemy)
 end

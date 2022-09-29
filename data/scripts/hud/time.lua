@@ -13,34 +13,19 @@ function rupees_builder:new(game, config)
     font = "8_bit",
     horizontal_alignment = "left",
   }
-  rupees.digits_text:set_text("Score:"..game:get_money())
-  rupees.money_displayed = game:get_money()
+  local time = game:get_value("time_penalty") or 0
+  rupees.digits_text:set_text("Time:"..time)
+  rupees.money_displayed = game:get_value("time_penalty") or 0
 
   function rupees:check()
 
     local need_rebuild = false
-    local money = game:get_money()
+    local money = game:get_value("time_penalty") or 0
 
     -- Current money.
     if money ~= rupees.money_displayed then
       need_rebuild = true
-      local increment
-      if money > rupees.money_displayed then
-        increment = 10
-        rupees.money_displayed = rupees.money_displayed + increment
-      else
-        rupees.money_displayed = money
-      end
-
-
-      -- Play a sound if we have just reached the final value.
-      if rupees.money_displayed == money then
-        sol.audio.play_sound("shield")
-
-      -- While the counter is scrolling, play a sound every 2 values.
-      elseif rupees.money_displayed % 2 == 0 then
-        sol.audio.play_sound("shield")
-      end
+      rupees.money_displayed = money
     end
 
     -- Redraw the surface only if something has changed.
@@ -57,15 +42,7 @@ function rupees_builder:new(game, config)
   function rupees:rebuild_surface()
 
     rupees.surface:clear()
-
-    -- Current rupee (counter).
-    local max_money = game:get_max_money()
-    if rupees.money_displayed == max_money then
-      rupees.digits_text:set_font("8_bit")
-    else
-      rupees.digits_text:set_font("8_bit")
-    end
-    rupees.digits_text:set_text("Score:"..rupees.money_displayed)
+    rupees.digits_text:set_text("Time:"..rupees.money_displayed)
     rupees.digits_text:draw(rupees.surface, 16, 5)
   end
 

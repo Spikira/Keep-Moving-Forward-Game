@@ -25,6 +25,12 @@ local hud_config = {
     x = -128,
     y = 6,
   },
+  -- Time counter.
+  {
+    menu_script = "scripts/hud/time",
+    x = -128,
+    y = 16,
+  },
 }
 
 return hud_config

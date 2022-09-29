@@ -27,8 +27,8 @@ function map:on_opening_transition_finished()
   return true
   end)
   function cyan_golem:on_dead()
-    gate:set_enabled(false)
-    gate_2:set_enabled(false)
-    gate_3:set_enabled(false)
+    gate:set_enabled()
+    gate_2:set_enabled()
+    gate_3:set_enabled()
   end
 end

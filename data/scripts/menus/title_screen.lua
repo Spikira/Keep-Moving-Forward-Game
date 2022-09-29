@@ -6,8 +6,6 @@ local surface = sol.surface.create(320, 240)
 local title = sol.sprite.create("menus/title_screen/title_screen")
 title:set_animation("title")
 
-local begun = 0
-
 local timer = nil
 local pressed = false
 
@@ -37,14 +35,7 @@ function title_screen:finish_him()
 end
 
 function title_screen:start_animation()
-  if begun <= 0 then
-    title_screen:begin()
-    timer = sol.timer.start(title_screen, 250, function()
-      if begun <= 1 then
-        title_screen:finish_him()
-      end
-    end)
-  end
+  title_screen:begin()
 end
 
 function title_screen:on_draw(screen)
@@ -54,10 +45,16 @@ end
 
 function title_screen:on_key_pressed(key)
   if pressed == false then
+    sol.audio.play_sound("switch")
+    sol.audio.play_sound("switch_hero")
+    title:set_animation("bright")
+    sol.timer.start(title_screen, 200, function()
+      title:set_animation("title")
+      draw()
+    end)
     title_screen:finish_him()
   end
   pressed = true
-  return true
 end
 
 return title_screen

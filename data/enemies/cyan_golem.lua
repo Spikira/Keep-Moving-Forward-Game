@@ -8,7 +8,7 @@ local m
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(15)
+  enemy:set_life(10)
   enemy:set_damage(2)
 end
 
