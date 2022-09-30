@@ -5,10 +5,10 @@ local hero = map:get_hero()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-  function red_sensor:on_activated()
+  if game:get_value("tunic") == "red" then
     hero:set_tunic_sprite_id("hero/red1")
   end
-  function blu_sensor:on_activated()
+  if game:get_value("tunic") == "blu" then
     hero:set_tunic_sprite_id("hero/blu1")
   end
   gate:set_enabled(false)

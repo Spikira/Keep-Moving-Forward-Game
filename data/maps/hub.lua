@@ -13,11 +13,13 @@ end
 function map:on_opening_transition_finished()
   function red_sensor:on_activated()
     sol.audio.play_sound("quake")
+    game:set_value("tunic", "red")
     hero:set_tunic_sprite_id("hero/red1")
   end
 
   function blu_sensor:on_activated()
     sol.audio.play_sound("quake")
+    game:set_value("tunic", "blu")
     hero:set_tunic_sprite_id("hero/blu1")
   end
 end
