@@ -22,6 +22,7 @@ function game_meta:on_game_over_started()
   sol.timer.start(self, 1000, function()
     sol.audio.play_sound("electrified")
     game:set_money(0)
+    game:set_value("time_penalty", 0)
     game:start()
   end)
 end

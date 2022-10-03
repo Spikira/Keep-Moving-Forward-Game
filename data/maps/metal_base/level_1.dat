@@ -4728,18 +4728,18 @@ tile{
 tile{
   layer = 0,
   x = 304,
-  y = 752,
+  y = 800,
   width = 8,
-  height = 80,
+  height = 32,
   pattern = "5",
 }
 
 tile{
   layer = 0,
   x = 328,
-  y = 704,
+  y = 800,
   width = 8,
-  height = 128,
+  height = 32,
   pattern = "4",
 }
 
@@ -5850,6 +5850,24 @@ tile{
   pattern = "1",
 }
 
+tile{
+  layer = 0,
+  x = 304,
+  y = 752,
+  width = 8,
+  height = 48,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 328,
+  y = 704,
+  width = 8,
+  height = 96,
+  pattern = "4",
+}
+
 pickable{
   layer = 0,
   x = 56,
@@ -6771,6 +6789,7 @@ destination{
   x = 320,
   y = 2285,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 destination{
@@ -6779,6 +6798,7 @@ destination{
   x = 320,
   y = 765,
   direction = 1,
+  starting_location_mode = "no",
 }
 
 separator{

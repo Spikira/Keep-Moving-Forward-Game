@@ -12,17 +12,19 @@ function entity:on_created()
       sol.timer.start(self:get_game(), 250, function()
         self:get_game():set_suspended(false)
       end)
-      sol.audio.play_sound("frost")
+      sol.audio.play_sound("frost1")
       map:create_custom_entity({
         name = entity:get_name(),
         x = x,
         y = y,
+        width = 16,
+        height = 16,
         layer = layer,
         direction = 1,
         sprite = "entities/"..entity_b:get_tunic_sprite_id(),
       })
       entity:remove()
-      game:set_starting_location(map, "check"..entity:get_name())
+      game:set_starting_location(map:get_id(), "check"..entity:get_name())
     end
   end)
 end

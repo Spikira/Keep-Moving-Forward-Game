@@ -17,15 +17,15 @@ sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
 sprite{ id = "enemies/yellow_soldier", description = "Yellow Soldier" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block (grey)" }
-sprite{ id = "entities/blu", description = "Blu" }
 sprite{ id = "entities/bomb", description = "Bomb" }
 sprite{ id = "entities/checkpoint", description = "Checkpoint" }
 sprite{ id = "entities/chest", description = "Chest (brown)" }
 sprite{ id = "entities/crystal", description = "Crystal" }
 sprite{ id = "entities/crystal_block", description = "Crystal block" }
 sprite{ id = "entities/explosion", description = "Explosion" }
+sprite{ id = "entities/hero/blu1", description = "Blu" }
+sprite{ id = "entities/hero/red1", description = "Red" }
 sprite{ id = "entities/items", description = "Items" }
-sprite{ id = "entities/red", description = "Red" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
 sprite{ id = "entities/star", description = "Star" }
