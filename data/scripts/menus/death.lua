@@ -8,21 +8,19 @@ function game_meta:on_game_over_started()
   sol.audio.stop_music()
   game:set_suspended()
   local camera = self:get_map():get_camera()
-  camera:set_position_on_screen(-1, 0)
+  local x = -1
   sol.timer.start(self, 50, function()
-    camera:set_position_on_screen(0, 0)
-    sol.timer.start(self, 50, function()
-      camera:set_position_on_screen(1, 0)
-      sol.timer.start(self, 50, function()
-        camera:set_position_on_screen(0, 0)
-      end)
-    end)
+    camera:set_position_on_screen(x, 0)
+    if x <= 1 then
+      x = x + 1
+    else
+      x = -1
+    end
   return true
   end)
   sol.timer.start(self, 1000, function()
     sol.audio.play_sound("electrified")
     game:set_money(0)
-    game:set_value("time_penalty", 0)
     game:start()
   end)
 end

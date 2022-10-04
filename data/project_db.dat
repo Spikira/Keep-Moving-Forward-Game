@@ -9,11 +9,14 @@ sprite{ id = "doors/door_normal", description = "Door (normal)" }
 sprite{ id = "doors/door_small_key", description = "Door (small key)" }
 sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" }
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
+sprite{ id = "enemies/cupquake", description = "Cupquake" }
 sprite{ id = "enemies/cyan_golem", description = "Cyan Golem" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/green_robot", description = "Green Robot" }
+sprite{ id = "enemies/omecram", description = "Omecram" }
 sprite{ id = "enemies/projectile", description = "Projectile" }
 sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
+sprite{ id = "enemies/pygun", description = "PyGun" }
 sprite{ id = "enemies/yellow_soldier", description = "Yellow Soldier" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block (grey)" }
