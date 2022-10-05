@@ -14,6 +14,9 @@ function map:on_started()
   gate:set_enabled(false)
   gate_2:set_enabled(false)
   gate_3:set_enabled(false)
+  sludge:set_enabled(false)
+  sludge_2:set_enabled(false)
+  sludge_3:set_enabled(false)
 end
 
 -- Event called after the opening transition effect of the map,
@@ -21,7 +24,7 @@ end
 function map:on_opening_transition_finished()
   -- Time Penalty
   sol.timer.start(map, 1000, function()
-    local x = game:get_value("time_penalty") or 0
+    local x = game:get_value("time_penalty")
     game:set_value("time_penalty", x + 1)
     x = game:get_value("time_penalty")
   return true
@@ -30,5 +33,10 @@ function map:on_opening_transition_finished()
     gate:set_enabled()
     gate_2:set_enabled()
     gate_3:set_enabled()
+  end
+  function purple_sludge:on_dead()
+    sludge:set_enabled()
+    sludge_2:set_enabled()
+    sludge_3:set_enabled()
   end
 end
