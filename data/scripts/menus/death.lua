@@ -9,6 +9,7 @@ function game_meta:on_game_over_started()
   game:set_suspended()
   local camera = self:get_map():get_camera()
   local x = -1
+  local y = 0
   sol.timer.start(self, 50, function()
     camera:set_position_on_screen(x, 0)
     if x <= 1 then
@@ -16,7 +17,8 @@ function game_meta:on_game_over_started()
     else
       x = -1
     end
-  return true
+    y = y + 1
+  return y <= 20
   end)
   sol.timer.start(self, 1000, function()
     sol.audio.play_sound("electrified")
