@@ -1,5 +1,5 @@
 animation{
-  name = "disk",
+  name = "hero/grey1",
   src_image = "hero/tank_r.png",
   frame_delay = 75,
   frame_to_loop_on = 0,
@@ -19,5 +19,25 @@ animation{
     { x = 16, y = 80, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 16 },
     { x = 16, y = 80, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 16 },
     { x = 16, y = 80, frame_width = 8, frame_height = 8, origin_x = 4, origin_y = 16 },
+  },
+}
+animation{
+  name = "hero/blu1",
+  src_image = "hero/tank_r.png",
+  directions = {
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "hero/red1",
+  src_image = "hero/tank_r.png",
+  directions = {
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
   },
 }

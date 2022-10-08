@@ -13,6 +13,7 @@ function disk:on_created()
   m:set_smooth(false)
   m:set_angle(1 * math.pi / 2)
   m:start(disk)
+  sprite:set_animation(map:get_hero():get_tunic_sprite_id())
   function m:on_obstacle_reached()
     if sound == nil then
       sol.audio.play_sound("fire_ball")
