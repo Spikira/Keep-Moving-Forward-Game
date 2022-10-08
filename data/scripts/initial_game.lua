@@ -24,6 +24,8 @@ function initial_game:initialize_new_savegame(game)
   game:set_ability("grab", 0)
   game:set_ability("push", 0)
   game:set_ability("pull", 0)
+  sol.audio.set_music_volume(25)
+  sol.audio.set_sound_volume(25)
 end
 
 return initial_game

@@ -16,9 +16,17 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
+  local bool_x = false
   m = sol.movement.create("circle")
   -- m:set_speed(42)
-  m:set_radius(16)
+  m:set_center(enemy)
+  m:set_radius(4)
+  m:set_angle_from_center(math.pi)
+  if math.random(0,1) == 0 then
+    bool_x = true
+  end
+  m:set_clockwise(bool_x)
+  m:set_angular_speed(24)
   m:start(enemy)
 end
 

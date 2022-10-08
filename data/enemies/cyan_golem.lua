@@ -8,8 +8,9 @@ local m
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(10)
+  enemy:set_life(5)
   enemy:set_damage(2)
+  enemy:set_pushed_back_when_hurt(false)
 end
 
 -- Event called when the enemy should start or restart its movements.
