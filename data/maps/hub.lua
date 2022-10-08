@@ -7,6 +7,7 @@ local hero = map:get_hero()
 function map:on_started()
   hero:set_tunic_sprite_id("hero/grey1")
   game:set_value("time_penalty", 0)
+  game:set_hud_enabled()
 end
 
 -- Event called after the opening transition effect of the map,

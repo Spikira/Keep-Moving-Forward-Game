@@ -33,7 +33,7 @@ local hero = sol.main.get_metatable("hero")
 
 function hero:on_state_changed(state)
 local x, y, layer = self:get_position()
-  if state == ("sword swinging") then
+  if state == "sword swinging" then
     self:get_map():create_custom_entity({
       direction = self:get_direction(),
       x = x,
