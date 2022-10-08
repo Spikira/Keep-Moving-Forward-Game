@@ -24,20 +24,23 @@ animation{
 animation{
   name = "hero/blu1",
   src_image = "hero/tank_r.png",
+  frame_delay = 75,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
+    { x = 16, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13, num_frames = 2, num_columns = 1 },
   },
 }
 animation{
   name = "hero/red1",
   src_image = "hero/tank_r.png",
+  frame_delay = 75,
+  frame_to_loop_on = 0,
   directions = {
-    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
-    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
-    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
-    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9, num_frames = 2, num_columns = 1 },
+    { x = 0, y = 88, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 9, num_frames = 2, num_columns = 1 },
   },
 }
