@@ -40,3 +40,8 @@ function map:on_opening_transition_finished()
     sludge_3:set_enabled()
   end
 end
+
+function cupquake_sensor:on_activated()
+  cupquake_sensor:set_enabled(false)
+  cupquake:set_enabled()
+end

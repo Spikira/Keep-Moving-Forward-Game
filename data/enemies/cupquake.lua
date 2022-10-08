@@ -16,7 +16,7 @@ function enemy:on_created()
 end
 
 function enemy:on_restarted()
-  enemy:stafe(0)
+  enemy:strafe(0)
   enemy:shoot()
   sol.timer.start(enemy, 1000, function()
     enemy:stafe(2)

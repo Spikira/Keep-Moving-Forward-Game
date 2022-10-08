@@ -1,4 +1,4 @@
-background_color{ 20, 20, 20 }
+background_color{ 0, 0, 0 }
 tile_pattern{
   id = "1",
   ground = "wall",
@@ -130,6 +130,16 @@ tile_pattern{
   y = 16,
   width = 16,
   height = 16,
+}
+
+tile_pattern{
+  id = "20",
+  ground = "empty",
+  default_layer = 0,
+  x = 0,
+  y = 0,
+  width = 8,
+  height = 8,
 }
 
 tile_pattern{

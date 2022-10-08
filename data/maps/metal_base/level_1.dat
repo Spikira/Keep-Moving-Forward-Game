@@ -6309,6 +6309,24 @@ tile{
   pattern = "1",
 }
 
+tile{
+  layer = 0,
+  x = 152,
+  y = 448,
+  width = 16,
+  height = 80,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 88,
+  y = 512,
+  width = 64,
+  height = 16,
+  pattern = "19",
+}
+
 pickable{
   layer = 0,
   x = 56,
@@ -7255,7 +7273,7 @@ enemy{
   name = "cyan_golem_2",
   layer = 0,
   x = 488,
-  y = 605,
+  y = 621,
   direction = 0,
   breed = "cyan_golem",
 }
@@ -7271,8 +7289,8 @@ enemy{
 enemy{
   name = "cyan_golem_3",
   layer = 0,
-  x = 80,
-  y = 445,
+  x = 120,
+  y = 477,
   direction = 0,
   breed = "cyan_golem",
 }
@@ -7429,6 +7447,15 @@ wall{
   width = 16,
   height = 48,
   stops_enemies = true,
+}
+
+sensor{
+  name = "cupquake_sensor",
+  layer = 0,
+  x = 168,
+  y = 221,
+  width = 320,
+  height = 32,
 }
 
 separator{

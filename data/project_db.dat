@@ -1,3 +1,4 @@
+map{ id = "controller_config", description = "Controller Config" }
 map{ id = "hub", description = "Hub" }
 map{ id = "metal_base/level_1", description = "Level 1" }
 
