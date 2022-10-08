@@ -64,15 +64,18 @@ function game:on_key_pressed(key)
         state = "attack"
         draw_script:print(3, state, 184, 64)
       elseif state == "attack" then
+        ready = false
+        draw_script:print(3, "", 0, 0)
         draw_script:print(2, "KEEP MOVING FORWARD!", 160, 64)
-        sol.timer.start(map, 1000, function()
+        sol.timer.start(map, 2000, function()
           draw_script:print(2, "YOU CAN NEVER TURN BACK!", 160, 64)
-          sol.timer.start(map, 1000, function()
+          sol.timer.start(map, 2000, function()
             draw_script:print(2, "THERE IS NO BACK BUTTON!", 160, 64)
-            sol.timer.start(map, 1000, function()
+            sol.timer.start(map, 2000, function()
               draw_script:print(2, "BE CAREFUL OUT THERE!", 160, 64)
-              sol.timer.start(map, 1000, function()
+              sol.timer.start(map, 2000, function()
                 hero:teleport("hub", nil)
+                sol.menu.stop(draw_script)
                 game:set_starting_location("hub", nil)
               end)
             end)
@@ -81,4 +84,5 @@ function game:on_key_pressed(key)
       end
     end
   end
+return false
 end
