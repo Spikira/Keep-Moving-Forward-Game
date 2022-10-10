@@ -42,7 +42,7 @@ function map:on_opening_transition_finished()
 end
 
 function cupquake_sensor:on_activated()
-  hero:set_starting_location("metal_base/level_1", "cupquake_dest")
+  hero:set_starting_location(map:get_id(), "cupquake_dest")
   cupquake_sensor:set_enabled(false)
   cupquake_npc:set_enabled()
   local m = sol.movement.create("straight")
@@ -80,5 +80,44 @@ function cupquake_sensor:on_activated()
 end
 
 function cupquake:on_dead()
-  
+  local goal = map:create_custom_entity({
+    layer = 0,
+    x = 320,
+    y = 13,
+    width = 16,
+    height = 16,
+    direction = 0,
+    sprite = "entities/flag/hero/grey1",
+    model = "big_flag",
+  })
+  local m = sol.movement.create("straight")
+  local dir = game:get_hero():get_direction()
+  m:set_speed(192)
+  m:set_smooth(false)
+  m:set_max_distance(88)
+  m:set_angle(3 * math.pi / 2)
+  m:set_ignore_obstacles()
+  m:start(goal)
+  function m:on_finished()
+    local camera = map:get_camera()
+    camera:set_position_on_screen(-2, 0)
+    sol.timer.start(map, 50, function()
+      camera:set_position_on_screen(-1, 0)
+      sol.timer.start(map, 50, function()
+        camera:set_position_on_screen(0, 0)
+        sol.timer.start(map, 50, function()
+          camera:set_position_on_screen(1, 0)
+          sol.timer.start(map, 50, function()
+            camera:set_position_on_screen(2, 0)
+            sol.timer.start(map, 50, function()
+              camera:set_position_on_screen(1, 0)
+              sol.timer.start(map, 50, function()
+                camera:set_position_on_screen(0, 0)
+              end)
+            end)
+          end)
+        end)
+      end)
+    end)
+  end
 end

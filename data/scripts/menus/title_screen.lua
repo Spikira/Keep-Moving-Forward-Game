@@ -44,7 +44,11 @@ function title_screen:on_draw(screen)
 end
 
 function title_screen:on_key_pressed(key)
-  if pressed == false then
+  if key == "backspace" then
+    if sol.game.exists("save1.dat") == true then
+      sol.game.delete("save1.dat")
+    end
+  elseif pressed == false then
     sol.audio.play_sound("switch")
     sol.audio.play_sound("switch_hero")
     title:set_animation("bright")

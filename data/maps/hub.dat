@@ -455,7 +455,7 @@ teletransporter{
   width = 16,
   height = 16,
   transition = "scrolling",
-  destination_map = "metal_base/level_1",
+  destination_map = "metal_base/act_1",
   destination = "red",
 }
 
@@ -466,7 +466,7 @@ teletransporter{
   width = 16,
   height = 16,
   transition = "scrolling",
-  destination_map = "metal_base/level_1",
+  destination_map = "metal_base/act_1",
   destination = "blu",
 }
 

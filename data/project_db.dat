@@ -1,6 +1,6 @@
 map{ id = "controller_config", description = "Controller Config" }
 map{ id = "hub", description = "Hub" }
-map{ id = "metal_base/level_1", description = "Level 1" }
+map{ id = "metal_base/act_1", description = "Act 1" }
 
 tileset{ id = "metal-base", description = "Metal Base" }
 
