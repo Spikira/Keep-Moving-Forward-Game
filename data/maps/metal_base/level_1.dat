@@ -7466,6 +7466,17 @@ destination{
   direction = 1,
 }
 
+custom_entity{
+  layer = 0,
+  x = 320,
+  y = 45,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/spring",
+  model = "spring",
+}
+
 separator{
   layer = 1,
   x = -8,

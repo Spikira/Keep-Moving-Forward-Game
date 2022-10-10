@@ -217,6 +217,7 @@ enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
 entity{ id = "checkpoint", description = "Checkpoint" }
 entity{ id = "disk", description = "Disk" }
+entity{ id = "spring", description = "Spring" }
 
 language{ id = "en", description = "English" }
 
