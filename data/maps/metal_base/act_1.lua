@@ -42,7 +42,7 @@ function map:on_opening_transition_finished()
 end
 
 function cupquake_sensor:on_activated()
-  hero:set_starting_location(map:get_id(), "cupquake_dest")
+  game:set_starting_location(map:get_id(), "cupquake_dest")
   cupquake_sensor:set_enabled(false)
   cupquake_npc:set_enabled()
   local m = sol.movement.create("straight")
@@ -90,6 +90,7 @@ function cupquake:on_dead()
     sprite = "entities/flag/hero/grey1",
     model = "big_flag",
   })
+  goal:set_property("next", "metal_base/act_2")
   local m = sol.movement.create("straight")
   local dir = game:get_hero():get_direction()
   m:set_speed(192)

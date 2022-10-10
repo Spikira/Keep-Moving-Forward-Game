@@ -5700,18 +5700,18 @@ tile{
 tile{
   layer = 0,
   x = 368,
-  y = 416,
+  y = 432,
   width = 8,
-  height = 48,
+  height = 32,
   pattern = "5",
 }
 
 tile{
   layer = 0,
   x = 0,
-  y = 400,
+  y = 416,
   width = 368,
-  height = 32,
+  height = 16,
   pattern = "1",
 }
 
@@ -5774,7 +5774,7 @@ tile{
   x = 0,
   y = 256,
   width = 160,
-  height = 144,
+  height = 160,
   pattern = "1",
 }
 
@@ -5871,7 +5871,7 @@ tile{
 tile{
   layer = 0,
   x = 368,
-  y = 400,
+  y = 416,
   width = 8,
   height = 16,
   pattern = "11",
@@ -5918,7 +5918,7 @@ tile{
   x = 160,
   y = 288,
   width = 8,
-  height = 112,
+  height = 128,
   pattern = "5",
 }
 
@@ -6448,6 +6448,24 @@ tile{
   layer = 0,
   x = 152,
   y = 1968,
+  width = 16,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 64,
+  width = 16,
+  height = 16,
+  pattern = "8",
+}
+
+tile{
+  layer = 0,
+  x = 200,
+  y = 64,
   width = 16,
   height = 16,
   pattern = "8",
@@ -7676,7 +7694,7 @@ pickable{
 pickable{
   layer = 0,
   x = 320,
-  y = 397,
+  y = 413,
   treasure_name = "heart",
 }
 
@@ -7706,6 +7724,28 @@ pickable{
   x = 568,
   y = 2909,
   treasure_name = "heart",
+}
+
+custom_entity{
+  layer = 0,
+  x = 432,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/spring",
+  model = "spring",
+}
+
+custom_entity{
+  layer = 0,
+  x = 208,
+  y = 93,
+  width = 16,
+  height = 16,
+  direction = 0,
+  sprite = "entities/spring",
+  model = "spring",
 }
 
 tile{

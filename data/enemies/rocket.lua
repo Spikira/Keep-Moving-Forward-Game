@@ -11,6 +11,7 @@ function enemy:on_created()
   enemy:set_life(1)
   enemy:set_damage(2)
   enemy:set_property("invincible", "true")
+  enemy:set_treasure("heart")
 end
 
 -- Event called when the enemy should start or restart its movements.
@@ -18,11 +19,9 @@ end
 -- it was hurt or immobilized.
 function enemy:on_restarted()
   m = sol.movement.create("straight")
-  m:set_speed(192)
+  m:set_speed(172)
   m:set_smooth(false)
-  m:set_ignore_obstacles()
   m:set_angle(enemy:get_angle(hero))
-  m:set_max_distance(192)
   local dir4 = m:get_direction4()
   sprite:set_direction(dir4)
   m:start(enemy)
