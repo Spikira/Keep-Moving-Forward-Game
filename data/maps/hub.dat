@@ -467,6 +467,6 @@ teletransporter{
   height = 16,
   transition = "scrolling",
   destination_map = "metal_base/level_1",
-  destination = "cupquake_2",
+  destination = "blu",
 }
 
