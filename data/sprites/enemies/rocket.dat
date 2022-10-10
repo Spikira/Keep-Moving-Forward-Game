@@ -2,9 +2,21 @@ animation{
   name = "walking",
   src_image = "hero/tank_r.png",
   directions = {
+    { x = 144, y = 64, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 144, y = 48, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+    { x = 144, y = 80, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
     { x = 144, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 144, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 144, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
-    { x = 144, y = 32, frame_width = 16, frame_height = 16, origin_x = 8, origin_y = 13 },
+  },
+}
+animation{
+  name = "hurt",
+  src_image = "hero/tank_r.png",
+  frame_delay = 250,
+  frame_to_loop_on = 0,
+  directions = {
+    { x = 104, y = 48, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 13 },
+    { x = 104, y = 48, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 13 },
+    { x = 104, y = 48, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 13 },
+    { x = 104, y = 48, frame_width = 8, frame_height = 8, origin_x = 8, origin_y = 13 },
   },
 }

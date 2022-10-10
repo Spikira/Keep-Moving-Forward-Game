@@ -19,6 +19,7 @@ sprite{ id = "enemies/projectile", description = "Projectile" }
 sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
 sprite{ id = "enemies/pygun", description = "PyGun" }
 sprite{ id = "enemies/rocket", description = "Rocket" }
+sprite{ id = "enemies/shuriken", description = "Shuriken" }
 sprite{ id = "enemies/yellow_soldier", description = "Yellow Soldier" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block (grey)" }
@@ -33,6 +34,7 @@ sprite{ id = "entities/hero/red1", description = "Red" }
 sprite{ id = "entities/items", description = "Items" }
 sprite{ id = "entities/rupee_icon", description = "Money icon" }
 sprite{ id = "entities/shadow", description = "Shadow" }
+sprite{ id = "entities/spring", description = "Spring" }
 sprite{ id = "entities/star", description = "Star" }
 sprite{ id = "hero/blu1", description = "Blu Tank" }
 sprite{ id = "hero/disk", description = "Disk" }
@@ -210,6 +212,7 @@ enemy{ id = "green_robot", description = "Green Robot" }
 enemy{ id = "projectile", description = "Projectile" }
 enemy{ id = "purple_sludge", description = "Purple Sludge" }
 enemy{ id = "rocket", description = "Rocket" }
+enemy{ id = "shuriken", description = "Shuriken" }
 enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
 entity{ id = "checkpoint", description = "Checkpoint" }

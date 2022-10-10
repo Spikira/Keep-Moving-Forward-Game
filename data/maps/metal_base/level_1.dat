@@ -7458,6 +7458,14 @@ sensor{
   height = 32,
 }
 
+destination{
+  name = "cupquake_2",
+  layer = 0,
+  x = 320,
+  y = 237,
+  direction = 1,
+}
+
 separator{
   layer = 1,
   x = -8,
@@ -7512,5 +7520,17 @@ separator{
   y = -16,
   width = 16,
   height = 256,
+}
+
+wall{
+  layer = 1,
+  x = 304,
+  y = 208,
+  width = 32,
+  height = 32,
+  stops_npcs = true,
+  stops_enemies = true,
+  stops_blocks = true,
+  stops_projectiles = true,
 }
 

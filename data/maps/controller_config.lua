@@ -36,10 +36,6 @@ function map:on_opening_transition_finished()
   draw_script:print(2, "PRESS A NEW KEY FOR: ", 120, 64)
 end
 
-function bind_list()
-  draw_script:print(4, state..": "..game:get_command_keyboard_binding(state), 64, 120)
-end
-
 function game:on_key_pressed(key)
   if ready == true then
     if key == game:get_command_keyboard_binding("up") or 
@@ -50,21 +46,25 @@ function game:on_key_pressed(key)
       sol.audio.play_sound("wrong3")
     else
       game:set_command_keyboard_binding(state, key)
-      bind_list()
       if state == "up" then
+        draw_script:print(4, state..": "..game:get_command_keyboard_binding(state), 64, 120)
         state = "left"
         draw_script:print(3, state, 184, 64)
       elseif state == "left" then
+        draw_script:print(5, state..": "..game:get_command_keyboard_binding(state), 64, 132)
         state = "right"
         draw_script:print(3, state, 184, 64)
       elseif state == "right" then
+        draw_script:print(6, state..": "..game:get_command_keyboard_binding(state), 64, 144)
         state = "pause"
         draw_script:print(3, state, 184, 64)
       elseif state == "pause" then
+        draw_script:print(7, state..": "..game:get_command_keyboard_binding(state), 64, 156)
         state = "attack"
         draw_script:print(3, state, 184, 64)
       elseif state == "attack" then
         ready = false
+        draw_script:print(8, state..": "..game:get_command_keyboard_binding(state), 64, 168)
         draw_script:print(3, "", 0, 0)
         draw_script:print(2, "KEEP MOVING FORWARD!", 160, 64)
         sol.timer.start(map, 2000, function()

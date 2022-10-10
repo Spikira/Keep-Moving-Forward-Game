@@ -14,6 +14,7 @@ function disk:on_created()
   m:set_angle(1 * math.pi / 2)
   m:start(disk)
   sprite:set_animation(map:get_hero():get_tunic_sprite_id())
+  disk:set_modified_ground("empty")
   function m:on_obstacle_reached()
     if sound == nil then
       sol.audio.play_sound("fire_ball")
@@ -34,17 +35,16 @@ function disk:on_created()
           sol.audio.play_sound("boss_hurt")
           entity_b:remove_life(game:get_ability("sword"))
           entity_b:set_property("invincible", "true")
-          entity_b:get_sprite():set_animation("hurt", function()
+          entity_b:get_sprite():set_animation("hurt")
+          sound = "played"
+          sol.timer.start(disk, 100, function()
             entity_b:get_sprite():set_animation("walking")
             entity_b:set_property("invincible", "no_stun")
+            disk:remove()
           end)
-          sound = "played"
         end
         sprite:set_animation("explode")
         m:stop()
-        sol.timer.start(disk, 100, function()
-          disk:remove()
-        end)
       else
         if sound == nil then
           sol.audio.play_sound("fire_ball")
