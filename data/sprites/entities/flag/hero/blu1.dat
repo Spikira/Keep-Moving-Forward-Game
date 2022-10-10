@@ -1,0 +1,10 @@
+animation{
+  name = "blu",
+  src_image = "hero/tank_r.png",
+  directions = {
+    { x = 256, y = 48, frame_width = 24, frame_height = 48, origin_x = 12, origin_y = 45 },
+    { x = 256, y = 48, frame_width = 24, frame_height = 48, origin_x = 12, origin_y = 45 },
+    { x = 256, y = 48, frame_width = 24, frame_height = 48, origin_x = 12, origin_y = 45 },
+    { x = 256, y = 48, frame_width = 24, frame_height = 48, origin_x = 12, origin_y = 45 },
+  },
+}

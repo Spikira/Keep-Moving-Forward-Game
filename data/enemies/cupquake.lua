@@ -13,6 +13,7 @@ function enemy:on_created()
   enemy:set_size(24, 24)
   enemy:set_origin(12, 21)
   enemy:set_property("invincible", "no_stun")
+  enemy:set_hurt_style("boss")
 end
 
 function enemy:on_restarted()

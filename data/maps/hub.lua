@@ -9,6 +9,7 @@ function map:on_started()
   game:set_value("time_penalty", 0)
   game:set_hud_enabled(true)
   game:set_paused(false)
+  game:save()
 end
 
 -- Event called after the opening transition effect of the map,

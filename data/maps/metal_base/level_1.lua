@@ -78,3 +78,7 @@ function cupquake_sensor:on_activated()
     cupquake:set_enabled()
   end
 end
+
+function cupquake:on_dead()
+  
+end
