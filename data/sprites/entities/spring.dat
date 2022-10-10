@@ -2,10 +2,7 @@ animation{
   name = "stopped",
   src_image = "hero/tank_r.png",
   directions = {
-    { x = 128, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 16 },
-    { x = 128, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 16 },
-    { x = 128, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 16 },
-    { x = 128, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 16 },
+    { x = 128, y = 56, frame_width = 16, frame_height = 24, origin_x = 8, origin_y = 13 },
   },
 }
 animation{

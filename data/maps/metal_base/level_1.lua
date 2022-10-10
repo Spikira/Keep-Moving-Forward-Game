@@ -43,5 +43,14 @@ end
 
 function cupquake_sensor:on_activated()
   cupquake_sensor:set_enabled(false)
-  cupquake:set_enabled()
+  local m = sol.movement.create("straight")
+  local dir = game:get_hero():get_direction()
+  m:set_speed(192)
+  m:set_smooth(false)
+  m:set_angle(3 * math.pi / 2)
+  m:start(cupquake_npc)
+  function m:on_finished()
+    cupquake_npc:remove()
+    cupquake:set_enabled()
+  end
 end
