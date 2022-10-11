@@ -153,6 +153,36 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "22",
+  ground = "empty",
+  default_layer = 0,
+  x = 8,
+  y = 8,
+  width = 8,
+  height = 8,
+}
+
+tile_pattern{
+  id = "23",
+  ground = "traversable",
+  default_layer = 0,
+  x = 48,
+  y = 64,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "24",
+  ground = "ladder",
+  default_layer = 0,
+  x = 64,
+  y = 80,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "3",
   ground = "wall",
   default_layer = 0,
@@ -226,5 +256,17 @@ tile_pattern{
   width = 8,
   height = 16,
   repeat_mode = "none",
+}
+
+tile_pattern{
+  id = "background",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 176,
+  y = 0,
+  width = 144,
+  height = 240,
+  scrolling = "self",
+  repeat_mode = "vertical",
 }
 
