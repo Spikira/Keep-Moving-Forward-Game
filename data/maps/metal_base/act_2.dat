@@ -1,10 +1,376 @@
 properties{
   x = 0,
   y = 0,
-  width = 320,
-  height = 240,
+  width = 640,
+  height = 3616,
   min_layer = 0,
   max_layer = 2,
+  world = "act_2",
   tileset = "metal-base",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 0,
+  width = 640,
+  height = 3616,
+  pattern = "2",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 240,
+  width = 32,
+  height = 32,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 0,
+  y = 3472,
+  width = 48,
+  height = 144,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 3472,
+  width = 480,
+  height = 144,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 3488,
+  width = 8,
+  height = 128,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 560,
+  y = 3472,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 568,
+  y = 3600,
+  width = 16,
+  height = 16,
+  pattern = "15_2",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 3488,
+  width = 8,
+  height = 128,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 48,
+  y = 3472,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 56,
+  y = 3600,
+  width = 16,
+  height = 16,
+  pattern = "15",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 3472,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 72,
+  y = 3488,
+  width = 8,
+  height = 128,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 3488,
+  width = 8,
+  height = 128,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 584,
+  y = 3472,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 592,
+  y = 3472,
+  width = 48,
+  height = 144,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 16,
+  width = 32,
+  height = 208,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 16,
+  width = 32,
+  height = 208,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 48,
+  width = 8,
+  height = 176,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 48,
+  width = 8,
+  height = 176,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "9",
+}
+
+tile{
+  layer = 0,
+  x = 184,
+  y = 32,
+  width = 272,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "10",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 16,
+  width = 288,
+  height = 16,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 456,
+  y = 32,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 224,
+  width = 144,
+  height = 48,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 224,
+  width = 144,
+  height = 48,
+  pattern = "1",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 240,
+  width = 8,
+  height = 32,
+  pattern = "4",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 240,
+  width = 8,
+  height = 32,
+  pattern = "5",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 224,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 272,
+  width = 8,
+  height = 16,
+  pattern = "7",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 272,
+  width = 8,
+  height = 16,
+  pattern = "6",
+}
+
+tile{
+  layer = 0,
+  x = 152,
+  y = 272,
+  width = 144,
+  height = 16,
+  pattern = "3",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 272,
+  width = 144,
+  height = 16,
+  pattern = "3",
+}
+
+destination{
+  name = "red",
+  layer = 0,
+  x = 576,
+  y = 3613,
+  direction = 1,
+  starting_location_mode = "no",
+}
+
+destination{
+  name = "blu",
+  layer = 0,
+  x = 64,
+  y = 3613,
+  direction = 1,
+  starting_location_mode = "no",
+}
+
+separator{
+  layer = 1,
+  x = -8,
+  y = 248,
+  width = 656,
+  height = 16,
+}
+
+separator{
+  layer = 1,
+  x = 472,
+  y = 0,
+  width = 16,
+  height = 256,
+}
+
+separator{
+  layer = 1,
+  x = 152,
+  y = 0,
+  width = 16,
+  height = 256,
+}
+
+separator{
+  layer = 1,
+  x = 160,
+  y = 8,
+  width = 320,
+  height = 16,
 }
 

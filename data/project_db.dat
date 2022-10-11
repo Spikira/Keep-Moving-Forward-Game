@@ -54,6 +54,7 @@ sprite{ id = "hud/icon_item_1", description = "Item 1 icon" }
 sprite{ id = "hud/icon_item_2", description = "Item 2 icon" }
 sprite{ id = "hud/icon_pause", description = "Pause icon" }
 sprite{ id = "hud/magic_bar", description = "Magic bar" }
+sprite{ id = "menus/act_trans", description = "Act Transition" }
 sprite{ id = "menus/arrow", description = "Arrow" }
 sprite{ id = "menus/options_cursor", description = "Options cursor" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
@@ -227,6 +228,7 @@ entity{ id = "spring", description = "Spring" }
 language{ id = "en", description = "English" }
 
 font{ id = "8_bit", description = "Spikira Font" }
+font{ id = "chunky", description = "Chunkier Spikira Font" }
 font{ id = "enter_command", description = "Enter Command" }
 
 shader{ id = "grayscale", description = "grayscale" }

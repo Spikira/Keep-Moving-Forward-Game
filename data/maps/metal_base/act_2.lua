@@ -12,9 +12,12 @@ local game = map:get_game()
 
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
-
-  -- You can initialize the movement and sprites of various
-  -- map entities here.
+  if game:get_value("tunic") == "red" then
+    hero:set_tunic_sprite_id("hero/red1")
+  end
+  if game:get_value("tunic") == "blu" then
+    hero:set_tunic_sprite_id("hero/blu1")
+  end
 end
 
 -- Event called after the opening transition effect of the map,

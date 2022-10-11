@@ -49,6 +49,13 @@ local text_8 = sol.text_surface.create{
   vertical_alignment = "top",
 }
 
+local text_c = sol.text_surface.create{
+  font = "8_bit",
+  horizontal_alignment = "center",
+  vertical_alignment = "top",
+  font = "chunky",
+}
+
 function draw_script:print(n, t, x, y)
   if n == 1 then
     text_1:set_text(t)
@@ -74,6 +81,9 @@ function draw_script:print(n, t, x, y)
   elseif n == 8 then
     text_8:set_text(t)
     text_8:set_xy(x, y)
+  elseif n == "c" then
+    text_c:set_text(t)
+    text_c:set_xy(x, y)
   end
 end
 
@@ -86,6 +96,7 @@ function draw_script:on_draw(dst_surface)
   text_6:draw(dst_surface)
   text_7:draw(dst_surface)
   text_8:draw(dst_surface)
+  text_c:draw(dst_surface)
 end
 
 function draw_script:unprint(n)
@@ -105,7 +116,66 @@ function draw_script:unprint(n)
     text_7:fade_out()
   elseif n == 8 then
     text_8:fade_out()
+  elseif n == "c" then
+    text_c:fade_out()
   end
+end
+
+function draw_script:on_finished()
+  text_1 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "center",
+    vertical_alignment = "top",
+  }
+
+  text_2 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "center",
+    vertical_alignment = "top",
+  }
+
+  text_3 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_4 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_5 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_6 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_7 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_8 = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "left",
+    vertical_alignment = "top",
+  }
+
+  text_c = sol.text_surface.create{
+    font = "8_bit",
+    horizontal_alignment = "center",
+    vertical_alignment = "top",
+    font = "chunky",
+  }
 end
 
 return draw_script

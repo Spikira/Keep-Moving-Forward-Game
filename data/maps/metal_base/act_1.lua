@@ -3,6 +3,9 @@ local map = ...
 local game = map:get_game()
 local hero = map:get_hero() 
 
+local draw_script = require("scripts/hud/draw_text")
+local act_trans = require("scripts/menus/act_trans")
+
 -- Event called at initialization time, as soon as this map is loaded.
 function map:on_started()
   if game:get_value("tunic") == "red" then
@@ -17,6 +20,18 @@ function map:on_started()
   sludge:set_enabled(false)
   sludge_2:set_enabled(false)
   sludge_3:set_enabled(false)
+
+  function game:on_world_changed()
+    sol.menu.start(game, act_trans)
+    sol.menu.start(game, draw_script)
+    game:set_suspended()
+    draw_script:print("c", map:get_id(), 160, 32)
+    sol.timer.start(map, 1500, function()
+      game:set_suspended(false)
+      sol.menu.stop(act_trans)
+      sol.menu.stop(draw_script)
+    end)
+  end
 end
 
 -- Event called after the opening transition effect of the map,
