@@ -183,6 +183,39 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "25",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 64,
+  width = 8,
+  height = 8,
+  repeat_mode = "vertical",
+}
+
+tile_pattern{
+  id = "26",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 72,
+  width = 8,
+  height = 8,
+  repeat_mode = "horizontal",
+}
+
+tile_pattern{
+  id = "27",
+  ground = "wall",
+  default_layer = 0,
+  x = 40,
+  y = 80,
+  width = 8,
+  height = 8,
+  repeat_mode = "none",
+}
+
+tile_pattern{
   id = "3",
   ground = "wall",
   default_layer = 0,

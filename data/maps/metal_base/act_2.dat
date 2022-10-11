@@ -1208,9 +1208,9 @@ tile{
 
 tile{
   layer = 0,
-  x = 280,
+  x = 272,
   y = 2768,
-  width = 80,
+  width = 96,
   height = 80,
   pattern = "23",
 }
@@ -1350,6 +1350,285 @@ tile{
   pattern = "19",
 }
 
+tile{
+  layer = 0,
+  x = 304,
+  y = 2704,
+  width = 32,
+  height = 16,
+  pattern = "18",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 2616,
+  width = 8,
+  height = 104,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 2616,
+  width = 8,
+  height = 104,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 304,
+  y = 2608,
+  width = 32,
+  height = 96,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 368,
+  y = 2576,
+  width = 128,
+  height = 64,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 2512,
+  width = 144,
+  height = 112,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 2592,
+  width = 80,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 2528,
+  width = 112,
+  height = 128,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 2608,
+  width = 8,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 288,
+  y = 2584,
+  width = 80,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 2960,
+  width = 64,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 208,
+  y = 2960,
+  width = 64,
+  height = 32,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 2960,
+  width = 96,
+  height = 32,
+  pattern = "20",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 2960,
+  width = 96,
+  height = 32,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 344,
+  y = 2608,
+  width = 24,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 296,
+  y = 2608,
+  width = 8,
+  height = 8,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 336,
+  y = 2608,
+  width = 8,
+  height = 8,
+  pattern = "27",
+}
+
+tile{
+  layer = 0,
+  x = 512,
+  y = 2416,
+  width = 16,
+  height = 112,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 2304,
+  width = 464,
+  height = 112,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 256,
+  y = 2416,
+  width = 224,
+  height = 32,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 176,
+  y = 2416,
+  width = 16,
+  height = 96,
+  pattern = "24",
+}
+
+tile{
+  layer = 0,
+  x = 160,
+  y = 2160,
+  width = 144,
+  height = 144,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 464,
+  y = 1856,
+  width = 48,
+  height = 144,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 2000,
+  width = 400,
+  height = 160,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 16,
+  y = 1912,
+  width = 64,
+  height = 208,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 2056,
+  width = 64,
+  height = 32,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 2088,
+  width = 64,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 80,
+  y = 2048,
+  width = 64,
+  height = 8,
+  pattern = "26",
+}
+
+tile{
+  layer = 0,
+  x = 400,
+  y = 2160,
+  width = 16,
+  height = 144,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 392,
+  y = 2160,
+  width = 8,
+  height = 144,
+  pattern = "25",
+}
+
+tile{
+  layer = 0,
+  x = 416,
+  y = 2160,
+  width = 8,
+  height = 144,
+  pattern = "25",
+}
+
 custom_entity{
   layer = 0,
   x = 240,
@@ -1413,18 +1692,11 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 72,
-  y = 2749,
-  direction = 0,
-  breed = "cyan_golem",
-}
-
-enemy{
-  layer = 0,
   x = 568,
   y = 2749,
   direction = 0,
   breed = "cyan_golem",
+  treasure_name = "heart",
 }
 
 enemy{
@@ -1690,6 +1962,53 @@ enemy{
   y = 3029,
   direction = 0,
   breed = "green_robot",
+}
+
+enemy{
+  layer = 0,
+  x = 320,
+  y = 2605,
+  direction = 0,
+  breed = "yellow_soldier",
+}
+
+pickable{
+  layer = 0,
+  x = 232,
+  y = 2749,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 408,
+  y = 2749,
+  treasure_name = "heart",
+}
+
+enemy{
+  layer = 0,
+  x = 72,
+  y = 2749,
+  direction = 0,
+  breed = "cyan_golem",
+  treasure_name = "heart",
+}
+
+enemy{
+  layer = 0,
+  x = 216,
+  y = 2525,
+  direction = 0,
+  breed = "cyan_golem",
+}
+
+enemy{
+  layer = 0,
+  x = 552,
+  y = 2557,
+  direction = 0,
+  breed = "purple_sludge",
 }
 
 separator{
