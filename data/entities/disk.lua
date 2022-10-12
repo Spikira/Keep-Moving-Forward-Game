@@ -7,7 +7,7 @@ local sprite = disk:create_sprite("hero/disk")
 local sound
 
 function disk:on_created()
-  disk:set_can_traverse_ground("low_wall")
+  disk:set_can_traverse_ground("low_wall", true)
   local m = sol.movement.create("straight")
   local dir = game:get_hero():get_direction()
   m:set_speed(192)

@@ -11,7 +11,6 @@ function enemy:on_created()
   enemy:set_life(1)
   enemy:set_damage(2)
   enemy:set_property("invincible", "true")
-  enemy:set_can_traverse_ground("low_wall")
   enemy:set_treasure("heart")
 end
 

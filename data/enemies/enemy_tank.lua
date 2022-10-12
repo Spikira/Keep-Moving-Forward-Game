@@ -4,22 +4,46 @@ local game = enemy:get_game()
 local map = enemy:get_map()
 local hero = map:get_hero()
 local sprite
-local movement
+local m
+local dir = 0
 
 function enemy:on_created()
 
   sprite = enemy:create_sprite("enemies/" .. entity_b:get_tunic_sprite_id())
   enemy:set_life(15)
   enemy:set_damage(1)
+  enemy:set_property("invincible", "no_stun")
 end
 
 -- Event called when the enemy should start or restart its movements.
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
+  enemy:strafe()
+  sol.timer.start(enemy, 500, function()
+    enemy:shoot()
+  return true
+  end)
+end
 
-  movement = sol.movement.create("target")
-  movement:set_target(hero)
-  movement:set_speed(48)
-  movement:start(enemy)
+function enemy:shoot()
+  enemy:create_enemy({
+    breed = "disk"
+  })
+end
+
+function enemy:strafe()
+  m = sol.movement.create("straight")
+  m:set_speed(88)
+  m:set_angle(dir * math.pi / 2)
+  m:set_smooth(false)
+  m:start(enemy)
+  function m:on_obstacle_reached()
+    if dir == 0 then
+      dir = 2
+    elseif dir == 2 then
+      dir = 0
+    end
+    enemy:strafe()
+  end
 end
