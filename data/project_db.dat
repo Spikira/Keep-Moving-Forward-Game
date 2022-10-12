@@ -13,8 +13,11 @@ sprite{ id = "doors/door_very_weak_wall", description = "Door (very weak wall)" 
 sprite{ id = "doors/door_weak_wall", description = "Door (weak wall)" }
 sprite{ id = "enemies/cupquake", description = "Cupquake" }
 sprite{ id = "enemies/cyan_golem", description = "Cyan Golem" }
+sprite{ id = "enemies/disk", description = "Disk" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy Killed" }
 sprite{ id = "enemies/green_robot", description = "Green Robot" }
+sprite{ id = "enemies/hero/blu1", description = "But actually red!" }
+sprite{ id = "enemies/hero/red1", description = "But actually blu!" }
 sprite{ id = "enemies/omecram", description = "Omecram" }
 sprite{ id = "enemies/projectile", description = "Projectile" }
 sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
@@ -213,6 +216,8 @@ item{ id = "tunic", description = "Tunic (red / green / purple)" }
 
 enemy{ id = "cupquake", description = "Cupquake" }
 enemy{ id = "cyan_golem", description = "Cyan Golem" }
+enemy{ id = "disk", description = "Disk" }
+enemy{ id = "enemy_tank" }
 enemy{ id = "green_robot", description = "Green Robot" }
 enemy{ id = "projectile", description = "Projectile" }
 enemy{ id = "purple_sludge", description = "Purple Sludge" }
