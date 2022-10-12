@@ -7731,15 +7731,6 @@ custom_entity{
   model = "spring",
 }
 
-tile{
-  layer = 1,
-  x = 312,
-  y = 0,
-  width = 16,
-  height = 104,
-  pattern = "21",
-}
-
 separator{
   layer = 1,
   x = -8,

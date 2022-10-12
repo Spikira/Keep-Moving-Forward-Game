@@ -3,6 +3,7 @@ map{ id = "hub", description = "Hub" }
 map{ id = "metal_base/act_1", description = "Act 1" }
 map{ id = "metal_base/act_2", description = "Act 2" }
 
+tileset{ id = "background", description = "Background" }
 tileset{ id = "metal-base", description = "Metal Base" }
 
 sprite{ id = "doors/door_big_key", description = "Door (big key)" }
@@ -24,6 +25,7 @@ sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
 sprite{ id = "enemies/pygun", description = "PyGun" }
 sprite{ id = "enemies/rocket", description = "Rocket" }
 sprite{ id = "enemies/shuriken", description = "Shuriken" }
+sprite{ id = "enemies/super_rocket", description = "Super Rocket" }
 sprite{ id = "enemies/yellow_soldier", description = "Yellow Soldier" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/block", description = "Block (grey)" }
@@ -89,6 +91,7 @@ sprite{ id = "teletransporters/teletransporter_pink", description = "Teletranspo
 sprite{ id = "teletransporters/teletransporter_yellow", description = "Teletransporter (yellow)" }
 
 music{ id = "blood_n_storm", description = "Blood N' Storm!" }
+music{ id = "time_to_get_serious", description = "Time To Get Serious!" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
 sound{ id = "bird_chirp", description = "bird_chirp" }
@@ -221,8 +224,10 @@ enemy{ id = "enemy_tank" }
 enemy{ id = "green_robot", description = "Green Robot" }
 enemy{ id = "projectile", description = "Projectile" }
 enemy{ id = "purple_sludge", description = "Purple Sludge" }
+enemy{ id = "pygun", description = "PyGun" }
 enemy{ id = "rocket", description = "Rocket" }
 enemy{ id = "shuriken", description = "Shuriken" }
+enemy{ id = "super_rocket", description = "Super Rocket" }
 enemy{ id = "yellow_soldier", description = "Yellow Soldier" }
 
 entity{ id = "big_flag", description = "Big Flag" }

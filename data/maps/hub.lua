@@ -26,4 +26,16 @@ function map:on_opening_transition_finished()
     game:set_value("tunic", "blu")
     hero:set_tunic_sprite_id("hero/blu1")
   end
+
+  function red_sensor_2:on_activated()
+    sol.audio.play_sound("quake")
+    game:set_value("tunic", "red")
+    hero:set_tunic_sprite_id("hero/red1")
+  end
+
+  function blu_sensor_2:on_activated()
+    sol.audio.play_sound("quake")
+    game:set_value("tunic", "blu")
+    hero:set_tunic_sprite_id("hero/blu1")
+  end
 end

@@ -526,7 +526,7 @@ teletransporter{
   height = 16,
   transition = "immediate",
   destination_map = "metal_base/act_2",
-  destination = "destination",
+  destination = "pygun_dest",
 }
 
 sensor{

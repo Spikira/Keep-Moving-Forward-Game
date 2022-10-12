@@ -8,21 +8,17 @@ local m
 local dir = 0
 
 function enemy:on_created()
-
-  sprite = enemy:create_sprite("enemies/" .. entity_b:get_tunic_sprite_id())
+  sprite = enemy:create_sprite("enemies/" .. hero:get_tunic_sprite_id())
   enemy:set_life(15)
   enemy:set_damage(1)
   enemy:set_property("invincible", "no_stun")
 end
 
--- Event called when the enemy should start or restart its movements.
--- This is called for example after the enemy is created or after
--- it was hurt or immobilized.
 function enemy:on_restarted()
   enemy:strafe()
   sol.timer.start(enemy, 500, function()
     enemy:shoot()
-  return true
+    enemy:restart()
   end)
 end
 
@@ -46,4 +42,8 @@ function enemy:strafe()
     end
     enemy:strafe()
   end
+end
+
+function enemy:on_dying()
+  game:remove_money(1000)
 end

@@ -17,12 +17,13 @@ end
 -- This is called for example after the enemy is created or after
 -- it was hurt or immobilized.
 function enemy:on_restarted()
+  sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
   m = sol.movement.create("straight")
   m:set_speed(128)
   m:set_smooth(false)
   m:set_angle(enemy:get_angle(hero))
   m:set_ignore_obstacles()
-  m:set_max_distance(64)
+  m:set_max_distance(88)
   m:start(enemy)
   function m:on_finished()
     enemy:get_sprite():set_animation("explode")
