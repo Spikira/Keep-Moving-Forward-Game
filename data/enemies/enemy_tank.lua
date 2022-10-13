@@ -44,6 +44,6 @@ function enemy:strafe()
   end
 end
 
-function enemy:on_dying()
-  game:remove_money(1000)
-end
+-- No score for you! 
+-- Would they not have been your comrade if their colors were changed? 
+-- How arbitrary...

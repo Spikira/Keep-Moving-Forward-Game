@@ -36,6 +36,10 @@ function map:on_opening_transition_finished()
   end)
 end
 
+function enemy_tank_sensor:on_activated()
+  enemy_tank:set_enabled()
+end
+
 function enemy_tank:on_dead()
   barrier:remove()
 end

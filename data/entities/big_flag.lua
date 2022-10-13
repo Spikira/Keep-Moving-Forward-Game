@@ -6,25 +6,25 @@ local map = entity:get_map()
 local draw_script = require("scripts/hud/draw_text")
 
 function entity:on_created()
-  local x, y, layer = entity:get_position()
   entity:add_collision_test("sprite", function(entity_a, entity_b)
     if entity_b:get_type() == "hero" then
       local rank
-      if game:get_money() - 2 * game:get_value("time_penalty") >= 2500 then
+      if game:get_money() - 2 * game:get_value("time_penalty") >= 5000 then
         rank = "S"
-      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 2000 then
+      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 4000 then
         rank = "A"
-      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 1500 then
+      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 3000 then
         rank = "B"
-      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 1000 then
+      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 2000 then
         rank = "C"
-      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 500 then
+      elseif game:get_money() - 2 * game:get_value("time_penalty") >= 1000 then
         rank = "D"
       elseif game:get_money() - 2 * game:get_value("time_penalty") > 0 then
         rank = "E"
       elseif game:get_money() - 2 * game:get_value("time_penalty") <= 0 then
         rank = "F"
       end
+      local x, y, layer = entity:get_position()
       sol.audio.play_sound("victory")
       sol.audio.stop_music()
       map:create_custom_entity({
@@ -50,6 +50,8 @@ function entity:on_created()
         game:set_suspended(false)
         sol.menu.stop(draw_script)
         sol.timer.start(game, 2500, function()
+          game:set_value("time_penalty", 0)
+          game:set_money(0)
           map:get_hero():teleport(entity:get_property("next"))
         end)
       end)

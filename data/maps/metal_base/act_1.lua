@@ -54,6 +54,10 @@ function map:on_opening_transition_finished()
   end
 end
 
+function cyan_golem_sensor:on_activated()
+  cyan_golem:set_enabled()
+end
+
 function cupquake_sensor:on_activated()
   sol.audio.stop_music()
   game:set_starting_location(map:get_id(), "cupquake_dest")

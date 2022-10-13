@@ -21,6 +21,15 @@ tile{
 
 tile{
   layer = 0,
+  x = 248,
+  y = 1168,
+  width = 96,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
   x = 328,
   y = 592,
   width = 64,
@@ -4611,15 +4620,6 @@ tile{
 
 tile{
   layer = 0,
-  x = 264,
-  y = 1104,
-  width = 64,
-  height = 16,
-  pattern = "19",
-}
-
-tile{
-  layer = 0,
   x = 360,
   y = 1104,
   width = 64,
@@ -6472,6 +6472,51 @@ tile{
   pattern = "8",
 }
 
+tile{
+  layer = 0,
+  x = 264,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 312,
+  y = 1104,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 424,
+  y = 1168,
+  width = 8,
+  height = 16,
+  pattern = "12",
+}
+
+tile{
+  layer = 0,
+  x = 448,
+  y = 1168,
+  width = 8,
+  height = 16,
+  pattern = "11",
+}
+
+tile{
+  layer = 0,
+  x = 432,
+  y = 1168,
+  width = 16,
+  height = 16,
+  pattern = "1",
+}
+
 pickable{
   layer = 0,
   x = 288,
@@ -6771,6 +6816,7 @@ enemy{
   layer = 0,
   x = 320,
   y = 2381,
+  enabled_at_start = false,
   direction = 0,
   breed = "cyan_golem",
 }
@@ -7025,14 +7071,6 @@ enemy{
   layer = 0,
   x = 320,
   y = 1613,
-  direction = 0,
-  breed = "yellow_soldier",
-}
-
-enemy{
-  layer = 0,
-  x = 248,
-  y = 1637,
   direction = 0,
   breed = "yellow_soldier",
 }
@@ -7418,7 +7456,7 @@ enemy{
   name = "cyan_golem_2",
   layer = 0,
   x = 488,
-  y = 637,
+  y = 589,
   direction = 0,
   breed = "cyan_golem",
 }
@@ -7729,6 +7767,92 @@ custom_entity{
   direction = 0,
   sprite = "entities/spring",
   model = "spring",
+}
+
+pickable{
+  layer = 0,
+  x = 416,
+  y = 3037,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 64,
+  y = 2877,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 440,
+  y = 2077,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 400,
+  y = 1677,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 248,
+  y = 1637,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 128,
+  y = 749,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 488,
+  y = 701,
+  treasure_name = "heart",
+}
+
+sensor{
+  name = "cyan_golem_sensor",
+  layer = 0,
+  x = 8,
+  y = 2589,
+  width = 640,
+  height = 32,
+}
+
+pickable{
+  layer = 0,
+  x = 344,
+  y = 1149,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 248,
+  y = 1149,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 440,
+  y = 1149,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 152,
+  y = 1149,
+  treasure_name = "heart",
 }
 
 separator{

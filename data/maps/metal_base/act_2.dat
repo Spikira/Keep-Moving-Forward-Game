@@ -1102,7 +1102,7 @@ tile{
 
 tile{
   layer = 0,
-  x = 464,
+  x = 472,
   y = 3216,
   width = 16,
   height = 16,
@@ -2003,9 +2003,9 @@ tile{
 tile{
   layer = 0,
   x = 544,
-  y = 1056,
+  y = 1072,
   width = 16,
-  height = 128,
+  height = 112,
   pattern = "24",
 }
 
@@ -2939,7 +2939,7 @@ tile{
 tile{
   layer = 0,
   x = 496,
-  y = 1056,
+  y = 1072,
   width = 48,
   height = 8,
   pattern = "27",
@@ -3305,6 +3305,49 @@ tile{
   pattern = "8",
 }
 
+tile{
+  layer = 0,
+  x = 48,
+  y = 1168,
+  width = 16,
+  height = 48,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 1168,
+  width = 16,
+  height = 48,
+  pattern = "19",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 1056,
+  width = 64,
+  height = 16,
+  pattern = "23",
+}
+
+tile{
+  layer = 0,
+  x = 496,
+  y = 448,
+  width = 16,
+  height = 16,
+  pattern = "19",
+}
+
+pickable{
+  layer = 0,
+  x = 504,
+  y = 781,
+  treasure_name = "heart",
+}
+
 custom_entity{
   layer = 0,
   x = 432,
@@ -3378,7 +3421,7 @@ enemy{
 
 enemy{
   layer = 0,
-  x = 136,
+  x = 128,
   y = 3469,
   direction = 0,
   breed = "yellow_soldier",
@@ -3386,7 +3429,7 @@ enemy{
 
 custom_entity{
   layer = 0,
-  x = 136,
+  x = 128,
   y = 3357,
   width = 16,
   height = 16,
@@ -3397,7 +3440,7 @@ custom_entity{
 
 custom_entity{
   layer = 0,
-  x = 472,
+  x = 480,
   y = 3245,
   width = 16,
   height = 16,
@@ -3565,7 +3608,7 @@ enemy{
 
 pickable{
   layer = 0,
-  x = 472,
+  x = 480,
   y = 3213,
   treasure_name = "heart",
 }
@@ -3702,22 +3745,6 @@ enemy{
   y = 2173,
   direction = 0,
   breed = "yellow_soldier",
-}
-
-enemy{
-  layer = 0,
-  x = 232,
-  y = 2237,
-  direction = 0,
-  breed = "purple_sludge",
-}
-
-enemy{
-  layer = 0,
-  x = 408,
-  y = 2029,
-  direction = 0,
-  breed = "cyan_golem",
 }
 
 enemy{
@@ -4099,13 +4126,6 @@ pickable{
   treasure_name = "heart",
 }
 
-pickable{
-  layer = 0,
-  x = 552,
-  y = 1021,
-  treasure_name = "heart",
-}
-
 enemy{
   layer = 0,
   x = 408,
@@ -4120,14 +4140,6 @@ enemy{
   y = 1021,
   direction = 0,
   breed = "green_robot",
-}
-
-enemy{
-  layer = 0,
-  x = 360,
-  y = 973,
-  direction = 0,
-  breed = "cyan_golem",
 }
 
 enemy{
@@ -4311,16 +4323,9 @@ enemy{
   layer = 0,
   x = 320,
   y = 1485,
+  enabled_at_start = false,
   direction = 0,
   breed = "enemy_tank",
-}
-
-enemy{
-  layer = 0,
-  x = 504,
-  y = 1149,
-  direction = 0,
-  breed = "cyan_golem",
 }
 
 wall{
@@ -4428,6 +4433,115 @@ custom_entity{
   direction = 0,
   sprite = "entities/spring",
   model = "spring",
+}
+
+pickable{
+  layer = 0,
+  x = 552,
+  y = 2541,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 184,
+  y = 2525,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 232,
+  y = 2413,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 328,
+  y = 1885,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 88,
+  y = 1917,
+  treasure_name = "heart",
+}
+
+sensor{
+  name = "enemy_tank_sensor",
+  layer = 0,
+  x = 296,
+  y = 1669,
+  width = 64,
+  height = 16,
+}
+
+pickable{
+  layer = 0,
+  x = 312,
+  y = 2125,
+  treasure_name = "heart",
+}
+
+enemy{
+  layer = 0,
+  x = 232,
+  y = 2237,
+  direction = 0,
+  breed = "cyan_golem",
+}
+
+enemy{
+  layer = 0,
+  x = 408,
+  y = 2077,
+  direction = 0,
+  breed = "purple_sludge",
+}
+
+pickable{
+  layer = 0,
+  x = 536,
+  y = 1069,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 360,
+  y = 1037,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 264,
+  y = 1005,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 184,
+  y = 925,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 392,
+  y = 813,
+  treasure_name = "heart",
+}
+
+pickable{
+  layer = 0,
+  x = 504,
+  y = 525,
+  treasure_name = "heart",
 }
 
 separator{

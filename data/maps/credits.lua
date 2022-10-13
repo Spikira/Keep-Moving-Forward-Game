@@ -15,6 +15,6 @@ end
 
 function map:on_opening_transition_finished()
   sol.timer.start(map, 500, function()
-    draw_script:print(4, "SPIKIRA: DIRECTION, PRODUCTION, CODE, ART, MUSIC", 160, 120)
+    draw_script:print(2, "SPIKIRA: DIRECTION, PRODUCTION, CODE, ART, MUSIC", 160, 120)
   end)
 end

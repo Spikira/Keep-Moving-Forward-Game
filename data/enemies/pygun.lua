@@ -102,5 +102,5 @@ end
 function enemy:on_dying()
   local x, y, layer = enemy:get_position()
   enemy:set_position(x, y, layer + 1)
-  game:add_money(1000)
+  game:add_money(1500)
 end
