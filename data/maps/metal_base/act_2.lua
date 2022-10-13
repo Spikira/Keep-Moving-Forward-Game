@@ -13,15 +13,15 @@ function map:on_started()
   if game:get_value("tunic") == "blu" then
     hero:set_tunic_sprite_id("hero/blu1")
   end
-  sol.menu.start(game, act_trans)
-  sol.menu.start(game, draw_script)
-  game:set_suspended()
-  draw_script:print("c", map:get_id(), 160, 32)
-  sol.timer.start(map, 1500, function()
-    game:set_suspended(false)
-    sol.menu.stop(act_trans)
-    sol.menu.stop(draw_script)
-  end)
+  -- sol.menu.start(game, act_trans)
+  -- sol.menu.start(game, draw_script)
+  -- game:set_suspended()
+  -- draw_script:print("c", map:get_id(), 160, 32)
+  --  sol.timer.start(map, 1500, function()
+    -- game:set_suspended(false)
+    -- sol.menu.stop(act_trans)
+    -- sol.menu.stop(draw_script)
+  -- end)
 end
 
 -- Event called after the opening transition effect of the map,

@@ -423,42 +423,6 @@ tile{
   pattern = "1",
 }
 
-tile{
-  layer = 0,
-  x = 104,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "18",
-}
-
-tile{
-  layer = 0,
-  x = 200,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "23",
-}
-
-tile{
-  layer = 0,
-  x = 184,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "15_2",
-}
-
-tile{
-  layer = 0,
-  x = 120,
-  y = 112,
-  width = 16,
-  height = 16,
-  pattern = "15",
-}
-
 destination{
   name = "destination",
   layer = 0,
@@ -505,45 +469,5 @@ teletransporter{
   transition = "scrolling",
   destination_map = "metal_base/act_1",
   destination = "blu",
-}
-
-teletransporter{
-  layer = 0,
-  x = 104,
-  y = 112,
-  width = 16,
-  height = 16,
-  transition = "immediate",
-  destination_map = "metal_base/act_1",
-  destination = "cupquake_dest",
-}
-
-teletransporter{
-  layer = 0,
-  x = 200,
-  y = 112,
-  width = 16,
-  height = 16,
-  transition = "immediate",
-  destination_map = "metal_base/act_2",
-  destination = "pygun_dest",
-}
-
-sensor{
-  name = "red_sensor_2",
-  layer = 0,
-  x = 192,
-  y = 125,
-  width = 16,
-  height = 16,
-}
-
-sensor{
-  name = "blu_sensor_2",
-  layer = 0,
-  x = 128,
-  y = 125,
-  width = 16,
-  height = 16,
 }
 

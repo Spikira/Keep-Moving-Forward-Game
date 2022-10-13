@@ -7598,7 +7598,7 @@ sensor{
   name = "cupquake_sensor",
   layer = 0,
   x = 168,
-  y = 237,
+  y = 205,
   width = 320,
   height = 32,
 }

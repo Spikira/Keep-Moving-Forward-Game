@@ -8,9 +8,9 @@ local m
 
 function enemy:on_created()
   sprite = enemy:create_sprite("enemies/" .. enemy:get_breed())
-  enemy:set_life(4)
+  enemy:set_life(1)
   enemy:set_damage(1)
-  enemy:set_property("invincible", "no_stun")
+  enemy:set_property("invincible", "true")
 end
 
 -- Event called when the enemy should start or restart its movements.
@@ -37,7 +37,7 @@ function enemy:on_restarted()
     m:set_smooth(false)
     m:set_angle(enemy:get_angle(hero))
     m:set_ignore_obstacles()
-    m:set_max_distance(128)
+    m:set_max_distance(320)
     m:start(enemy)
     function m:on_finished()
       enemy:remove()
