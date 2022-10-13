@@ -2,6 +2,7 @@ map{ id = "controller_config", description = "Controller Config" }
 map{ id = "hub", description = "Hub" }
 map{ id = "metal_base/act_1", description = "Act 1" }
 map{ id = "metal_base/act_2", description = "Act 2" }
+map{ id = "metal_base/boss", description = "Boss" }
 
 tileset{ id = "background", description = "Background" }
 tileset{ id = "metal-base", description = "Metal Base" }
@@ -20,6 +21,7 @@ sprite{ id = "enemies/green_robot", description = "Green Robot" }
 sprite{ id = "enemies/hero/blu1", description = "But actually red!" }
 sprite{ id = "enemies/hero/red1", description = "But actually blu!" }
 sprite{ id = "enemies/omecram", description = "Omecram" }
+sprite{ id = "enemies/omedisk", description = "Omedisk" }
 sprite{ id = "enemies/projectile", description = "Projectile" }
 sprite{ id = "enemies/purple_sludge", description = "Purple Sludge" }
 sprite{ id = "enemies/pygun", description = "PyGun" }
@@ -222,6 +224,9 @@ enemy{ id = "cyan_golem", description = "Cyan Golem" }
 enemy{ id = "disk", description = "Disk" }
 enemy{ id = "enemy_tank" }
 enemy{ id = "green_robot", description = "Green Robot" }
+enemy{ id = "omecram", description = "Omecram" }
+enemy{ id = "omecram_blast", description = "Omecram Blast" }
+enemy{ id = "omedisk", description = "Omedisk" }
 enemy{ id = "projectile", description = "Projectile" }
 enemy{ id = "purple_sludge", description = "Purple Sludge" }
 enemy{ id = "pygun", description = "PyGun" }
