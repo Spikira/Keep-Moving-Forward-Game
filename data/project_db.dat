@@ -94,6 +94,7 @@ sprite{ id = "teletransporters/teletransporter_pink", description = "Teletranspo
 sprite{ id = "teletransporters/teletransporter_yellow", description = "Teletransporter (yellow)" }
 
 music{ id = "blood_n_storm", description = "Blood N' Storm!" }
+music{ id = "fierce_cannon", description = "Fierce Cannon - Athin Warrior" }
 music{ id = "time_to_get_serious", description = "Time To Get Serious!" }
 
 sound{ id = "arrow_hit", description = "arrow_hit" }
